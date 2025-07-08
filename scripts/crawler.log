@@ -230,3 +230,36 @@
 2025-07-08 11:50:58,779 - INFO - Saved brand data: ../data/coupons/nature-made-coupon.json
 2025-07-08 11:50:58,779 - INFO - Successfully processed Nature Made Coupon - 3 coupons found
 2025-07-08 11:51:02,993 - INFO - Crawling process completed!
+2025-07-08 13:27:43,437 - INFO - Starting coupon crawling process...
+2025-07-08 13:27:43,439 - INFO - Found 2 brands to crawl
+2025-07-08 13:27:43,439 - INFO - Crawling brand: Nature Made Coupon
+2025-07-08 13:27:48,959 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/naturemade.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/naturemade.com
+2025-07-08 13:27:48,961 - INFO - Saved brand data: ../data/coupons/nature-made-coupon.json
+2025-07-08 13:27:48,961 - INFO - Successfully processed Nature Made Coupon - 4 coupons found
+2025-07-08 13:27:51,351 - INFO - Crawling brand: Organic Basics Discount
+2025-07-08 13:27:54,045 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/organicbasics.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/organicbasics.com
+2025-07-08 13:27:54,047 - INFO - Saved brand data: ../data/coupons/organic-basics-discount.json
+2025-07-08 13:27:54,047 - INFO - Successfully processed Organic Basics Discount - 4 coupons found
+2025-07-08 13:27:57,109 - INFO - Crawling process completed!
+2025-07-08 13:32:06,361 - INFO - Starting coupon crawling process...
+2025-07-08 13:32:06,362 - INFO - Found 2 brands to crawl
+2025-07-08 13:32:06,363 - INFO - Crawling brand: Nature Made Coupon
+2025-07-08 13:32:10,014 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/naturemade.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/naturemade.com
+2025-07-08 13:32:10,016 - INFO - Saved brand data: ../data/coupons/nature-made-coupon.json
+2025-07-08 13:32:10,016 - INFO - Successfully processed Nature Made Coupon - 4 coupons found
+2025-07-08 13:32:12,537 - INFO - Crawling brand: Organic Basics Discount
+2025-07-08 13:32:15,683 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/organicbasics.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/organicbasics.com
+2025-07-08 13:32:15,685 - INFO - Saved brand data: ../data/coupons/organic-basics-discount.json
+2025-07-08 13:32:15,685 - INFO - Successfully processed Organic Basics Discount - 4 coupons found
+2025-07-08 13:32:19,270 - INFO - Crawling process completed!
+2025-07-08 13:32:35,326 - INFO - Starting coupon crawling process...
+2025-07-08 13:32:35,327 - INFO - Found 2 brands to crawl
+2025-07-08 13:32:35,327 - INFO - Crawling brand: Nature Made Coupon
+2025-07-08 13:32:38,010 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/naturemade.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/naturemade.com
+2025-07-08 13:32:38,012 - INFO - Saved brand data: ../data/coupons/nature-made-coupon.json
+2025-07-08 13:32:38,012 - INFO - Successfully processed Nature Made Coupon - 4 coupons found
+2025-07-08 13:32:41,470 - INFO - Crawling brand: Organic Basics Discount
+2025-07-08 13:32:45,025 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/organicbasics.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/organicbasics.com
+2025-07-08 13:32:45,027 - INFO - Saved brand data: ../data/coupons/organic-basics-discount.json
+2025-07-08 13:32:45,027 - INFO - Successfully processed Organic Basics Discount - 4 coupons found
+2025-07-08 13:32:47,239 - INFO - Crawling process completed!

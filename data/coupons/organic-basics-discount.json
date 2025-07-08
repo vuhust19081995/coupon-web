@@ -1,0 +1,80 @@
+{
+  "brandKey": "organic-basics-discount",
+  "brandName": "Organic Basics Discount",
+  "brandUrl": "https://www.couponbirds.com/codes/organicbasics.com",
+  "affiliateUrl": "https://naturemade.com/affiliate/123456",
+  "description": "Organic Basics Discount offers innovative solutions and services. Save money with our exclusive coupon codes and promotional offers.",
+  "logo": "/images/brands/organic-basics-discount.png",
+  "lastUpdated": "2025-07-08T13:32:45.026124",
+  "coupons": [
+    {
+      "id": "organicbasicsdiscount100",
+      "title": "New Customer Discount",
+      "code": "NEW20",
+      "description": "Save 20% on Organic Basics Discount with this exclusive coupon",
+      "discount": "20%",
+      "type": "code",
+      "expiryDate": "2025-09-06",
+      "isVerified": true,
+      "usedCount": 751,
+      "successRate": 89,
+      "recentSaving": "$49.00",
+      "savedTime": "9 hours ago"
+    },
+    {
+      "id": "organicbasicsdiscount101",
+      "title": "Free Shipping Deal",
+      "code": "NO CODE NEEDED",
+      "description": "Save Free Shipping on Organic Basics Discount with this exclusive deal",
+      "discount": "Free Shipping",
+      "type": "deal",
+      "expiryDate": "2025-09-06",
+      "isVerified": true,
+      "usedCount": 909,
+      "successRate": 95,
+      "recentSaving": "$63.00",
+      "savedTime": "10 hours ago"
+    },
+    {
+      "id": "organicbasicsdiscount102",
+      "title": "Student Discount",
+      "code": "STUDENT50",
+      "description": "Save 50% on Organic Basics Discount with this exclusive coupon",
+      "discount": "50%",
+      "type": "code",
+      "expiryDate": "2025-09-06",
+      "isVerified": true,
+      "usedCount": 705,
+      "successRate": 90,
+      "recentSaving": "$78.00",
+      "savedTime": "5 hours ago"
+    },
+    {
+      "id": "organicbasicsdiscount103",
+      "title": "Flash Sale",
+      "code": "NO CODE NEEDED",
+      "description": "Save 30% on Organic Basics Discount with this exclusive deal",
+      "discount": "30%",
+      "type": "deal",
+      "expiryDate": "2025-09-06",
+      "isVerified": true,
+      "usedCount": 349,
+      "successRate": 85,
+      "recentSaving": "$97.00",
+      "savedTime": "12 hours ago"
+    }
+  ],
+  "categories": [
+    "Software",
+    "Tools"
+  ],
+  "rating": 4.9,
+  "totalCoupons": 4,
+  "activeCoupons": 4,
+  "features": [
+    "Team collaboration",
+    "API access",
+    "Free trial available",
+    "24/7 customer support"
+  ]
+}

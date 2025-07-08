@@ -118,9 +118,59 @@ class CouponCrawler:
 
         return coupons[:8]  # Limit to 8 coupons max
 
+    def determine_coupon_type(self, element) -> str:
+        """Determine if coupon is 'code' or 'deal' based on HTML structure"""
+        element_text = element.get_text().lower()
+        element_html = str(element).lower()
+
+        # Keywords that indicate a coupon code
+        code_indicators = [
+            'get code', 'show code', 'reveal code', 'copy code', 'coupon code',
+            'promo code', 'discount code', 'code:', 'use code', 'apply code'
+        ]
+
+        # Keywords that indicate a deal/sale
+        deal_indicators = [
+            'get deal', 'shop now', 'shop sale', 'get offer', 'claim deal',
+            'no code needed', 'no code required', 'automatic discount',
+            'sale', 'deal', 'offer', 'get discount'
+        ]
+
+        # Check for code indicators first
+        for indicator in code_indicators:
+            if indicator in element_text or indicator in element_html:
+                return "code"
+
+        # Check for deal indicators
+        for indicator in deal_indicators:
+            if indicator in element_text or indicator in element_html:
+                return "deal"
+
+        # Look for button text or class names
+        buttons = element.find_all(['button', 'a'], class_=True)
+        for button in buttons:
+            button_text = button.get_text().lower()
+            button_classes = ' '.join(button.get('class', [])).lower()
+
+            if any(word in button_text for word in ['code', 'coupon']):
+                return "code"
+            elif any(word in button_text for word in ['deal', 'shop', 'offer']):
+                return "deal"
+
+            if any(word in button_classes for word in ['code', 'coupon']):
+                return "code"
+            elif any(word in button_classes for word in ['deal', 'shop', 'offer']):
+                return "deal"
+
+        # Default to code if uncertain
+        return "code"
+
     def extract_couponbirds_data(self, element, brand_name: str) -> Optional[Dict]:
         """Extract coupon data from CouponBirds HTML element"""
         try:
+            # Determine if this is a code or deal based on element structure
+            coupon_type = self.determine_coupon_type(element)
+
             # Try to find coupon code
             code_element = element.find(['span', 'div', 'code'], class_=lambda x: x and ('code' in x.lower() or 'coupon' in x.lower()))
             if not code_element:
@@ -142,15 +192,29 @@ class CouponCrawler:
             code_match = re.search(r'\b[A-Z0-9]{3,20}\b', code_text.upper())
 
             if code_match or title_text:
-                code = code_match.group() if code_match else f"SAVE{random.randint(10, 99)}"
+                # Generate code based on type
+                if coupon_type == "code" and code_match:
+                    code = code_match.group()
+                elif coupon_type == "code":
+                    code = f"SAVE{random.randint(10, 99)}"
+                else:
+                    code = "NO CODE NEEDED"
 
                 # Extract discount percentage
                 discount_match = re.search(r'(\d+)%', discount_text + title_text)
-                discount = f"{discount_match.group(1)}%" if discount_match else "Special Offer"
+                if discount_match:
+                    discount = f"{discount_match.group(1)}%"
+                elif "free" in (discount_text + title_text).lower():
+                    discount = "Free Shipping"
+                else:
+                    discount = "Special Offer"
 
                 # Generate title if not found
                 if not title_text:
-                    title_text = f"Exclusive {brand_name} Deal - {discount}"
+                    if coupon_type == "code":
+                        title_text = f"Exclusive {brand_name} Coupon - {discount}"
+                    else:
+                        title_text = f"Special {brand_name} Deal - {discount}"
 
                 # Generate coupon data
                 coupon_id = f"{brand_name.lower().replace(' ', '')}{random.randint(100, 999)}"
@@ -159,9 +223,9 @@ class CouponCrawler:
                     "id": coupon_id,
                     "title": title_text[:50],  # Limit title length
                     "code": code,
-                    "description": f"Save with this verified {brand_name} coupon code",
+                    "description": f"Save with this verified {brand_name} {'coupon code' if coupon_type == 'code' else 'deal'}",
                     "discount": discount,
-                    "type": "percentage" if "%" in discount else "special",
+                    "type": coupon_type,
                     "expiryDate": (datetime.now() + timedelta(days=45)).strftime("%Y-%m-%d"),
                     "isVerified": True,  # Mark as verified since from CouponBirds
                     "usedCount": random.randint(100, 2000),
@@ -219,30 +283,44 @@ class CouponCrawler:
     def extract_coupon_data(self, element, brand_name: str) -> Optional[Dict]:
         """Extract coupon data from HTML element"""
         try:
+            # Determine coupon type
+            coupon_type = self.determine_coupon_type(element)
+
             # Try to find coupon code
             code_text = element.get_text(strip=True)
-            
+
             # Look for code patterns (alphanumeric, 3-20 chars)
             import re
             code_match = re.search(r'\b[A-Z0-9]{3,20}\b', code_text.upper())
-            
-            if code_match:
-                code = code_match.group()
-                
+
+            if code_match or coupon_type == "deal":
+                # Generate code based on type
+                if coupon_type == "code" and code_match:
+                    code = code_match.group()
+                elif coupon_type == "code":
+                    code = f"SAVE{random.randint(10, 99)}"
+                else:
+                    code = "NO CODE NEEDED"
+
                 # Try to extract discount percentage
                 discount_match = re.search(r'(\d+)%', code_text)
-                discount = f"{discount_match.group(1)}%" if discount_match else "Special Offer"
-                
+                if discount_match:
+                    discount = f"{discount_match.group(1)}%"
+                elif "free" in code_text.lower():
+                    discount = "Free Shipping"
+                else:
+                    discount = "Special Offer"
+
                 # Generate coupon data
                 coupon_id = f"{brand_name.lower().replace(' ', '')}{random.randint(100, 999)}"
-                
+
                 return {
                     "id": coupon_id,
-                    "title": f"Special Discount - {discount}",
+                    "title": f"Special {'Coupon' if coupon_type == 'code' else 'Deal'} - {discount}",
                     "code": code,
-                    "description": f"Save with this exclusive {brand_name} coupon code",
+                    "description": f"Save with this exclusive {brand_name} {'coupon code' if coupon_type == 'code' else 'deal'}",
                     "discount": discount,
-                    "type": "percentage" if "%" in discount else "special",
+                    "type": coupon_type,
                     "expiryDate": (datetime.now() + timedelta(days=30)).strftime("%Y-%m-%d"),
                     "isVerified": False,  # Mark as unverified since it's crawled
                     "usedCount": random.randint(50, 500),
@@ -250,46 +328,56 @@ class CouponCrawler:
                     "recentSaving": f"${random.randint(10, 100)}.00",
                     "savedTime": f"{random.randint(1, 24)} hours ago"
                 }
-                
+
         except Exception as e:
             logger.debug(f"Error extracting coupon data: {str(e)}")
-            
+
         return None
     
     def extract_promotional_offers(self, soup, brand_name: str) -> List[Dict]:
         """Extract promotional offers from page content"""
         offers = []
-        
+
         # Look for promotional text patterns
         promo_patterns = [
-            r'(\d+)%\s*off',
-            r'save\s*(\d+)%',
-            r'(\d+)%\s*discount',
-            r'free\s*trial',
-            r'free\s*for\s*students'
+            (r'(\d+)%\s*off', "deal"),
+            (r'save\s*(\d+)%', "deal"),
+            (r'(\d+)%\s*discount', "code"),
+            (r'free\s*trial', "deal"),
+            (r'free\s*for\s*students', "deal"),
+            (r'coupon\s*code', "code"),
+            (r'promo\s*code', "code")
         ]
-        
+
         text_content = soup.get_text().lower()
-        
-        for i, pattern in enumerate(promo_patterns):
+
+        for i, (pattern, offer_type) in enumerate(promo_patterns):
             import re
             matches = re.findall(pattern, text_content)
-            
+
             for match in matches[:2]:  # Limit to 2 per pattern
                 if isinstance(match, tuple):
                     discount = f"{match[0]}%"
+                elif "free" in pattern:
+                    discount = "Free Trial" if "trial" in pattern else "Free Shipping"
                 else:
-                    discount = "Free Trial" if "free" in pattern else "Special Offer"
-                
+                    discount = "Special Offer"
+
+                # Generate code based on type
+                if offer_type == "code":
+                    code = f"SAVE{random.randint(10, 99)}"
+                else:
+                    code = "NO CODE NEEDED"
+
                 offer_id = f"{brand_name.lower().replace(' ', '')}{100 + i}{random.randint(10, 99)}"
-                
+
                 offers.append({
                     "id": offer_id,
-                    "title": f"Limited Time Offer - {discount}",
-                    "code": f"SAVE{random.randint(10, 99)}",
-                    "description": f"Exclusive {brand_name} promotional offer",
+                    "title": f"Limited Time {'Coupon' if offer_type == 'code' else 'Deal'} - {discount}",
+                    "code": code,
+                    "description": f"Exclusive {brand_name} promotional {'coupon' if offer_type == 'code' else 'offer'}",
                     "discount": discount,
-                    "type": "percentage" if "%" in discount else "trial",
+                    "type": offer_type,
                     "expiryDate": (datetime.now() + timedelta(days=45)).strftime("%Y-%m-%d"),
                     "isVerified": False,
                     "usedCount": random.randint(20, 200),
@@ -297,7 +385,7 @@ class CouponCrawler:
                     "recentSaving": f"${random.randint(15, 75)}.00",
                     "savedTime": f"{random.randint(1, 48)} hours ago"
                 })
-                
+
         return offers[:3]  # Limit to 3 promotional offers
     
     def generate_brand_data(self, brand_row, coupons: List[Dict]) -> Dict:
@@ -327,23 +415,24 @@ class CouponCrawler:
     def generate_sample_coupons(self, brand_name: str) -> List[Dict]:
         """Generate sample coupons when crawling fails"""
         sample_coupons = []
-        
+
         offers = [
-            {"title": "New Customer Discount", "discount": "20%", "code": "NEW20"},
-            {"title": "Annual Plan Special", "discount": "30%", "code": "ANNUAL30"},
-            {"title": "Student Discount", "discount": "50%", "code": "STUDENT50"},
+            {"title": "New Customer Discount", "discount": "20%", "code": "NEW20", "type": "code"},
+            {"title": "Free Shipping Deal", "discount": "Free Shipping", "code": "NO CODE NEEDED", "type": "deal"},
+            {"title": "Student Discount", "discount": "50%", "code": "STUDENT50", "type": "code"},
+            {"title": "Flash Sale", "discount": "30%", "code": "NO CODE NEEDED", "type": "deal"},
         ]
-        
+
         for i, offer in enumerate(offers):
             coupon_id = f"{brand_name.lower().replace(' ', '')}{100 + i}"
-            
+
             sample_coupons.append({
                 "id": coupon_id,
                 "title": offer["title"],
                 "code": offer["code"],
-                "description": f"Save {offer['discount']} on {brand_name} with this exclusive offer",
+                "description": f"Save {offer['discount']} on {brand_name} with this exclusive {'coupon' if offer['type'] == 'code' else 'deal'}",
                 "discount": offer["discount"],
-                "type": "percentage",
+                "type": offer["type"],
                 "expiryDate": (datetime.now() + timedelta(days=60)).strftime("%Y-%m-%d"),
                 "isVerified": True,
                 "usedCount": random.randint(100, 1000),
@@ -351,7 +440,7 @@ class CouponCrawler:
                 "recentSaving": f"${random.randint(20, 100)}.00",
                 "savedTime": f"{random.randint(1, 12)} hours ago"
             })
-            
+
         return sample_coupons
     
     def guess_categories(self, brand_name: str) -> List[str]:

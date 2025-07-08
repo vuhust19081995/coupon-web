@@ -4,11 +4,12 @@ import CouponCard from '@/components/CouponCard'
 import ActionButton from '@/components/ActionButton'
 import CouponTabs from '@/components/CouponTabs'
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 interface BrandPageProps {
-  params: {
+  params: Promise<{
     brand: string
-  }
+  }>
 }
 
 // Generate static params for all brands
@@ -203,9 +204,9 @@ export default async function BrandPage({ params }: BrandPageProps) {
           <div className="flex-1 order-1 lg:order-2">
             {/* Breadcrumb */}
             <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
-              <a href="/" className="hover:text-blue-600">Home</a>
+              <Link href="/" className="hover:text-blue-600">Home</Link>
               <span>/</span>
-              <a href="/deals" className="hover:text-blue-600">All Deals</a>
+              <Link href="/deals" className="hover:text-blue-600">All Deals</Link>
               <span>/</span>
               <span className="text-gray-900">{brand.brandName} Coupon</span>
             </nav>
@@ -213,7 +214,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
             {/* Page Title */}
             <div className="mb-8">
               <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                {brand.brandName} Coupon Codes & Deals - July 2025
+                {brand.brandName} Codes & Deals - {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
               </h1>
               <p className="text-gray-600">
                 {brand.activeCoupons} active deals available • Updated daily • Verified by our team

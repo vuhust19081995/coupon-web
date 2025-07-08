@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { Coupon, Brand, formatDiscount, formatTimeAgo } from '@/lib/utils'
-import { Copy, Check, ExternalLink, Clock, Users, TrendingUp, AlertCircle } from 'lucide-react'
+import { Coupon, Brand } from '@/lib/utils'
+import { Copy, Check } from 'lucide-react'
 
 interface CouponCardProps {
   coupon: Coupon

@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { Copy, ExternalLink, Check, Star } from 'lucide-react'
 import { Brand, Coupon, formatDiscount, formatTimeAgo } from '@/lib/utils'
 import Link from 'next/link'
-import Image from 'next/image'
 
 interface ExclusiveCodesProps {
   exclusiveCoupons: { brand: Brand; coupon: Coupon }[]
@@ -45,7 +44,7 @@ export default function ExclusiveCodes({ exclusiveCoupons }: ExclusiveCodesProps
             <Star className="w-6 h-6 text-yellow-500 fill-current" />
           </div>
           <p className="text-lg text-gray-600">
-            Hand-picked deals you won't find anywhere else
+            Hand-picked deals you won&apos;t find anywhere else
           </p>
         </div>
 
