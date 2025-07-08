@@ -1,0 +1,232 @@
+2025-07-08 11:17:45,183 - INFO - Starting coupon crawling process...
+2025-07-08 11:17:45,183 - ERROR - Brands CSV file not found: data/brands.csv
+2025-07-08 11:17:45,184 - ERROR - No brands found in CSV file
+2025-07-08 11:18:24,679 - INFO - Starting coupon crawling process...
+2025-07-08 11:18:24,681 - INFO - Found 20 brands to crawl
+2025-07-08 11:18:24,681 - INFO - Crawling brand: Canva Pro
+2025-07-08 11:18:29,643 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/canva.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/canva.com
+2025-07-08 11:18:29,644 - INFO - Saved brand data: ../data/coupons/canva-pro.json
+2025-07-08 11:18:29,645 - INFO - Successfully processed Canva Pro - 3 coupons found
+2025-07-08 11:18:31,696 - INFO - Crawling brand: Notion
+2025-07-08 11:18:34,585 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/notion.so: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/notion.so
+2025-07-08 11:18:34,587 - INFO - Saved brand data: ../data/coupons/notion.json
+2025-07-08 11:18:34,587 - INFO - Successfully processed Notion - 3 coupons found
+2025-07-08 11:18:38,743 - INFO - Crawling brand: Figma
+2025-07-08 11:18:43,376 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/figma.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/figma.com
+2025-07-08 11:18:43,376 - INFO - Saved brand data: ../data/coupons/figma.json
+2025-07-08 11:18:43,376 - INFO - Successfully processed Figma - 3 coupons found
+2025-07-08 11:18:47,434 - INFO - Crawling brand: Adobe Creative Cloud
+2025-07-08 11:18:49,865 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/adobe.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/adobe.com
+2025-07-08 11:18:49,866 - INFO - Saved brand data: ../data/coupons/adobe-creative-cloud.json
+2025-07-08 11:18:49,867 - INFO - Successfully processed Adobe Creative Cloud - 3 coupons found
+2025-07-08 11:18:53,553 - INFO - Crawling brand: Grammarly
+2025-07-08 11:18:56,386 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/grammarly.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/grammarly.com
+2025-07-08 11:18:56,389 - INFO - Saved brand data: ../data/coupons/grammarly.json
+2025-07-08 11:18:56,389 - INFO - Successfully processed Grammarly - 3 coupons found
+2025-07-08 11:19:00,911 - INFO - Crawling brand: Slack
+2025-07-08 11:19:04,713 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/slack.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/slack.com
+2025-07-08 11:19:04,715 - INFO - Saved brand data: ../data/coupons/slack.json
+2025-07-08 11:19:04,715 - INFO - Successfully processed Slack - 3 coupons found
+2025-07-08 11:19:08,181 - INFO - Crawling brand: Zoom
+2025-07-08 11:19:12,122 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/zoom.us: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/zoom.us
+2025-07-08 11:19:12,124 - INFO - Saved brand data: ../data/coupons/zoom.json
+2025-07-08 11:19:12,124 - INFO - Successfully processed Zoom - 3 coupons found
+2025-07-08 11:19:14,278 - INFO - Crawling brand: Dropbox
+2025-07-08 11:19:18,164 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/dropbox.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/dropbox.com
+2025-07-08 11:19:18,165 - INFO - Saved brand data: ../data/coupons/dropbox.json
+2025-07-08 11:19:18,166 - INFO - Successfully processed Dropbox - 3 coupons found
+2025-07-08 11:19:22,019 - INFO - Crawling brand: Trello
+2025-07-08 11:19:24,210 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/trello.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/trello.com
+2025-07-08 11:19:24,211 - INFO - Saved brand data: ../data/coupons/trello.json
+2025-07-08 11:19:24,211 - INFO - Successfully processed Trello - 3 coupons found
+2025-07-08 11:19:28,597 - INFO - Crawling brand: Asana
+2025-07-08 11:19:32,555 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/asana.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/asana.com
+2025-07-08 11:19:32,557 - INFO - Saved brand data: ../data/coupons/asana.json
+2025-07-08 11:19:32,557 - INFO - Successfully processed Asana - 3 coupons found
+2025-07-08 11:19:35,477 - INFO - Crawling brand: Monday.com
+2025-07-08 11:19:38,576 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/monday.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/monday.com
+2025-07-08 11:19:38,577 - INFO - Saved brand data: ../data/coupons/monday-com.json
+2025-07-08 11:19:38,577 - INFO - Successfully processed Monday.com - 3 coupons found
+2025-07-08 11:19:42,473 - INFO - Crawling brand: Mailchimp
+2025-07-08 11:19:45,921 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/mailchimp.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/mailchimp.com
+2025-07-08 11:19:45,923 - INFO - Saved brand data: ../data/coupons/mailchimp.json
+2025-07-08 11:19:45,923 - INFO - Successfully processed Mailchimp - 3 coupons found
+2025-07-08 11:19:48,330 - INFO - Crawling brand: HubSpot
+2025-07-08 11:19:53,324 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/hubspot.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/hubspot.com
+2025-07-08 11:19:53,325 - INFO - Saved brand data: ../data/coupons/hubspot.json
+2025-07-08 11:19:53,325 - INFO - Successfully processed HubSpot - 3 coupons found
+2025-07-08 11:19:56,826 - INFO - Crawling brand: Salesforce
+2025-07-08 11:20:00,636 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/salesforce.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/salesforce.com
+2025-07-08 11:20:00,638 - INFO - Saved brand data: ../data/coupons/salesforce.json
+2025-07-08 11:20:00,638 - INFO - Successfully processed Salesforce - 3 coupons found
+2025-07-08 11:20:04,183 - INFO - Crawling brand: Shopify
+2025-07-08 11:20:07,432 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/shopify.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/shopify.com
+2025-07-08 11:20:07,433 - INFO - Saved brand data: ../data/coupons/shopify.json
+2025-07-08 11:20:07,434 - INFO - Successfully processed Shopify - 3 coupons found
+2025-07-08 11:20:11,258 - INFO - Crawling brand: Squarespace
+2025-07-08 11:20:15,377 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/squarespace.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/squarespace.com
+2025-07-08 11:20:15,378 - INFO - Saved brand data: ../data/coupons/squarespace.json
+2025-07-08 11:20:15,378 - INFO - Successfully processed Squarespace - 3 coupons found
+2025-07-08 11:20:19,589 - INFO - Crawling brand: Wix
+2025-07-08 11:20:22,400 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/wix.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/wix.com
+2025-07-08 11:20:22,402 - INFO - Saved brand data: ../data/coupons/wix.json
+2025-07-08 11:20:22,402 - INFO - Successfully processed Wix - 3 coupons found
+2025-07-08 11:20:27,358 - INFO - Crawling brand: WordPress.com
+2025-07-08 11:20:31,112 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/wordpress.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/wordpress.com
+2025-07-08 11:20:31,114 - INFO - Saved brand data: ../data/coupons/wordpress-com.json
+2025-07-08 11:20:31,114 - INFO - Successfully processed WordPress.com - 3 coupons found
+2025-07-08 11:20:33,518 - INFO - Crawling brand: GitHub
+2025-07-08 11:20:36,324 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/github.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/github.com
+2025-07-08 11:20:36,325 - INFO - Saved brand data: ../data/coupons/github.json
+2025-07-08 11:20:36,326 - INFO - Successfully processed GitHub - 3 coupons found
+2025-07-08 11:20:41,088 - INFO - Crawling brand: GitLab
+2025-07-08 11:20:44,537 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/gitlab.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/gitlab.com
+2025-07-08 11:20:44,538 - INFO - Saved brand data: ../data/coupons/gitlab.json
+2025-07-08 11:20:44,538 - INFO - Successfully processed GitLab - 3 coupons found
+2025-07-08 11:20:46,867 - INFO - Crawling process completed!
+2025-07-08 11:37:44,789 - INFO - Starting coupon crawling process...
+2025-07-08 11:37:44,790 - INFO - Found 21 brands to crawl
+2025-07-08 11:37:44,791 - INFO - Crawling brand: Canva Pro
+2025-07-08 11:37:48,253 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/canva.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/canva.com
+2025-07-08 11:37:48,255 - INFO - Saved brand data: ../data/coupons/canva-pro.json
+2025-07-08 11:37:48,255 - INFO - Successfully processed Canva Pro - 3 coupons found
+2025-07-08 11:37:52,254 - INFO - Crawling brand: Notion
+2025-07-08 11:37:56,543 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/notion.so: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/notion.so
+2025-07-08 11:37:56,543 - INFO - Saved brand data: ../data/coupons/notion.json
+2025-07-08 11:37:56,543 - INFO - Successfully processed Notion - 3 coupons found
+2025-07-08 11:37:58,574 - INFO - Crawling brand: Figma
+2025-07-08 11:38:01,420 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/figma.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/figma.com
+2025-07-08 11:38:01,421 - INFO - Saved brand data: ../data/coupons/figma.json
+2025-07-08 11:38:01,421 - INFO - Successfully processed Figma - 3 coupons found
+2025-07-08 11:38:06,383 - INFO - Crawling brand: Adobe Creative Cloud
+2025-07-08 11:38:09,646 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/adobe.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/adobe.com
+2025-07-08 11:38:09,647 - INFO - Saved brand data: ../data/coupons/adobe-creative-cloud.json
+2025-07-08 11:38:09,647 - INFO - Successfully processed Adobe Creative Cloud - 3 coupons found
+2025-07-08 11:38:12,724 - INFO - Crawling brand: Grammarly
+2025-07-08 11:38:14,856 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/grammarly.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/grammarly.com
+2025-07-08 11:38:14,857 - INFO - Saved brand data: ../data/coupons/grammarly.json
+2025-07-08 11:38:14,857 - INFO - Successfully processed Grammarly - 3 coupons found
+2025-07-08 11:38:18,618 - INFO - Crawling brand: Slack
+2025-07-08 11:38:22,864 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/slack.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/slack.com
+2025-07-08 11:38:22,865 - INFO - Saved brand data: ../data/coupons/slack.json
+2025-07-08 11:38:22,866 - INFO - Successfully processed Slack - 3 coupons found
+2025-07-08 11:38:25,721 - INFO - Crawling brand: Zoom
+2025-07-08 11:38:27,767 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/zoom.us: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/zoom.us
+2025-07-08 11:38:27,768 - INFO - Saved brand data: ../data/coupons/zoom.json
+2025-07-08 11:38:27,768 - INFO - Successfully processed Zoom - 3 coupons found
+2025-07-08 11:38:29,956 - INFO - Crawling brand: Dropbox
+2025-07-08 11:38:33,238 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/dropbox.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/dropbox.com
+2025-07-08 11:38:33,239 - INFO - Saved brand data: ../data/coupons/dropbox.json
+2025-07-08 11:38:33,240 - INFO - Successfully processed Dropbox - 3 coupons found
+2025-07-08 11:38:37,526 - INFO - Crawling brand: Trello
+2025-07-08 11:38:41,885 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/trello.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/trello.com
+2025-07-08 11:38:41,886 - INFO - Saved brand data: ../data/coupons/trello.json
+2025-07-08 11:38:41,886 - INFO - Successfully processed Trello - 3 coupons found
+2025-07-08 11:38:45,388 - INFO - Crawling brand: Asana
+2025-07-08 11:38:49,262 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/asana.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/asana.com
+2025-07-08 11:38:49,263 - INFO - Saved brand data: ../data/coupons/asana.json
+2025-07-08 11:38:49,264 - INFO - Successfully processed Asana - 3 coupons found
+2025-07-08 11:38:53,121 - INFO - Crawling brand: Monday.com
+2025-07-08 11:38:55,456 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/monday.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/monday.com
+2025-07-08 11:38:55,456 - INFO - Saved brand data: ../data/coupons/monday-com.json
+2025-07-08 11:38:55,456 - INFO - Successfully processed Monday.com - 3 coupons found
+2025-07-08 11:38:58,585 - INFO - Crawling brand: Mailchimp
+2025-07-08 11:39:01,203 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/mailchimp.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/mailchimp.com
+2025-07-08 11:39:01,204 - INFO - Saved brand data: ../data/coupons/mailchimp.json
+2025-07-08 11:39:01,205 - INFO - Successfully processed Mailchimp - 3 coupons found
+2025-07-08 11:39:04,561 - INFO - Crawling brand: HubSpot
+2025-07-08 11:39:07,899 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/hubspot.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/hubspot.com
+2025-07-08 11:39:07,901 - INFO - Saved brand data: ../data/coupons/hubspot.json
+2025-07-08 11:39:07,901 - INFO - Successfully processed HubSpot - 3 coupons found
+2025-07-08 11:39:11,579 - INFO - Crawling brand: Salesforce
+2025-07-08 11:39:14,929 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/salesforce.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/salesforce.com
+2025-07-08 11:39:14,929 - INFO - Saved brand data: ../data/coupons/salesforce.json
+2025-07-08 11:39:14,929 - INFO - Successfully processed Salesforce - 3 coupons found
+2025-07-08 11:39:19,755 - INFO - Crawling brand: Shopify
+2025-07-08 11:39:22,773 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/shopify.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/shopify.com
+2025-07-08 11:39:22,775 - INFO - Saved brand data: ../data/coupons/shopify.json
+2025-07-08 11:39:22,775 - INFO - Successfully processed Shopify - 3 coupons found
+2025-07-08 11:42:39,887 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/naturemade.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/naturemade.com
+2025-07-08 11:42:39,889 - INFO - Saved brand data: ../data/coupons/nature-made.json
+2025-07-08 11:47:55,770 - INFO - Starting coupon crawling process...
+2025-07-08 11:47:55,771 - INFO - Found 21 brands to crawl
+2025-07-08 11:47:55,771 - INFO - Crawling brand: Canva Pro
+2025-07-08 11:47:59,080 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/canva.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/canva.com
+2025-07-08 11:47:59,081 - INFO - Saved brand data: ../data/coupons/canva-pro.json
+2025-07-08 11:47:59,081 - INFO - Successfully processed Canva Pro - 3 coupons found
+2025-07-08 11:48:01,427 - INFO - Crawling brand: Notion
+2025-07-08 11:48:04,793 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/notion.so: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/notion.so
+2025-07-08 11:48:04,794 - INFO - Saved brand data: ../data/coupons/notion.json
+2025-07-08 11:48:04,794 - INFO - Successfully processed Notion - 3 coupons found
+2025-07-08 11:48:08,385 - INFO - Crawling brand: Figma
+2025-07-08 11:48:12,126 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/figma.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/figma.com
+2025-07-08 11:48:12,127 - INFO - Saved brand data: ../data/coupons/figma.json
+2025-07-08 11:48:12,127 - INFO - Successfully processed Figma - 3 coupons found
+2025-07-08 11:48:15,363 - INFO - Crawling brand: Adobe Creative Cloud
+2025-07-08 11:48:20,325 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/adobe.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/adobe.com
+2025-07-08 11:48:20,325 - INFO - Saved brand data: ../data/coupons/adobe-creative-cloud.json
+2025-07-08 11:48:20,325 - INFO - Successfully processed Adobe Creative Cloud - 3 coupons found
+2025-07-08 11:48:24,825 - INFO - Crawling brand: Grammarly
+2025-07-08 11:48:28,046 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/grammarly.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/grammarly.com
+2025-07-08 11:48:28,047 - INFO - Saved brand data: ../data/coupons/grammarly.json
+2025-07-08 11:48:28,047 - INFO - Successfully processed Grammarly - 3 coupons found
+2025-07-08 11:48:32,926 - INFO - Crawling brand: Slack
+2025-07-08 11:48:37,439 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/slack.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/slack.com
+2025-07-08 11:48:37,440 - INFO - Saved brand data: ../data/coupons/slack.json
+2025-07-08 11:48:37,440 - INFO - Successfully processed Slack - 3 coupons found
+2025-07-08 11:48:40,389 - INFO - Crawling brand: Zoom
+2025-07-08 11:48:42,525 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/zoom.us: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/zoom.us
+2025-07-08 11:48:42,526 - INFO - Saved brand data: ../data/coupons/zoom.json
+2025-07-08 11:48:42,526 - INFO - Successfully processed Zoom - 3 coupons found
+2025-07-08 11:48:45,115 - INFO - Crawling brand: Dropbox
+2025-07-08 11:48:49,261 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/dropbox.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/dropbox.com
+2025-07-08 11:48:49,262 - INFO - Saved brand data: ../data/coupons/dropbox.json
+2025-07-08 11:48:49,263 - INFO - Successfully processed Dropbox - 3 coupons found
+2025-07-08 11:48:52,992 - INFO - Crawling brand: Trello
+2025-07-08 11:48:55,756 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/trello.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/trello.com
+2025-07-08 11:48:55,758 - INFO - Saved brand data: ../data/coupons/trello.json
+2025-07-08 11:48:55,758 - INFO - Successfully processed Trello - 3 coupons found
+2025-07-08 11:48:58,378 - INFO - Crawling brand: Asana
+2025-07-08 11:49:02,509 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/asana.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/asana.com
+2025-07-08 11:49:02,510 - INFO - Saved brand data: ../data/coupons/asana.json
+2025-07-08 11:49:02,510 - INFO - Successfully processed Asana - 3 coupons found
+2025-07-08 11:49:04,528 - INFO - Crawling brand: Monday.com
+2025-07-08 11:49:06,824 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/monday.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/monday.com
+2025-07-08 11:49:06,825 - INFO - Saved brand data: ../data/coupons/monday-com.json
+2025-07-08 11:49:06,826 - INFO - Successfully processed Monday.com - 3 coupons found
+2025-07-08 11:49:10,177 - INFO - Crawling brand: Mailchimp
+2025-07-08 11:49:14,289 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/mailchimp.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/mailchimp.com
+2025-07-08 11:49:14,290 - INFO - Saved brand data: ../data/coupons/mailchimp.json
+2025-07-08 11:49:14,291 - INFO - Successfully processed Mailchimp - 3 coupons found
+2025-07-08 11:49:18,000 - INFO - Crawling brand: HubSpot
+2025-07-08 11:49:22,055 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/hubspot.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/hubspot.com
+2025-07-08 11:49:22,056 - INFO - Saved brand data: ../data/coupons/hubspot.json
+2025-07-08 11:49:22,057 - INFO - Successfully processed HubSpot - 3 coupons found
+2025-07-08 11:49:25,751 - INFO - Crawling brand: Salesforce
+2025-07-08 11:49:28,026 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/salesforce.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/salesforce.com
+2025-07-08 11:49:28,027 - INFO - Saved brand data: ../data/coupons/salesforce.json
+2025-07-08 11:49:28,028 - INFO - Successfully processed Salesforce - 3 coupons found
+2025-07-08 11:49:32,893 - INFO - Crawling brand: Shopify
+2025-07-08 11:49:36,810 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/shopify.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/shopify.com
+2025-07-08 11:49:36,811 - INFO - Saved brand data: ../data/coupons/shopify.json
+2025-07-08 11:49:36,811 - INFO - Successfully processed Shopify - 3 coupons found
+2025-07-08 11:49:39,174 - INFO - Crawling brand: Squarespace
+2025-07-08 11:49:42,230 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/squarespace.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/squarespace.com
+2025-07-08 11:49:42,232 - INFO - Saved brand data: ../data/coupons/squarespace.json
+2025-07-08 11:49:42,232 - INFO - Successfully processed Squarespace - 3 coupons found
+2025-07-08 11:49:45,334 - INFO - Crawling brand: Wix
+2025-07-08 11:49:48,543 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/wix.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/wix.com
+2025-07-08 11:49:48,544 - INFO - Saved brand data: ../data/coupons/wix.json
+2025-07-08 11:49:48,545 - INFO - Successfully processed Wix - 3 coupons found
+2025-07-08 11:49:51,643 - INFO - Crawling brand: WordPress.com
+2025-07-08 11:49:54,850 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/wordpress.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/wordpress.com
+2025-07-08 11:49:54,851 - INFO - Saved brand data: ../data/coupons/wordpress-com.json
+2025-07-08 11:49:54,852 - INFO - Successfully processed WordPress.com - 3 coupons found
+2025-07-08 11:49:58,962 - INFO - Crawling brand: GitHub
+2025-07-08 11:50:56,142 - INFO - Starting coupon crawling process...
+2025-07-08 11:50:56,143 - INFO - Found 1 brands to crawl
+2025-07-08 11:50:56,143 - INFO - Crawling brand: Nature Made Coupon
+2025-07-08 11:50:58,777 - ERROR - Error crawling CouponBirds https://www.couponbirds.com/codes/naturemade.com: 403 Client Error: Forbidden for url: https://www.couponbirds.com/codes/naturemade.com
+2025-07-08 11:50:58,779 - INFO - Saved brand data: ../data/coupons/nature-made-coupon.json
+2025-07-08 11:50:58,779 - INFO - Successfully processed Nature Made Coupon - 3 coupons found
+2025-07-08 11:51:02,993 - INFO - Crawling process completed!

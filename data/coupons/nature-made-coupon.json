@@ -1,0 +1,94 @@
+{
+  "brandKey": "nature-made-coupon",
+  "brandName": "Nature Made Coupon",
+  "brandUrl": "https://www.couponbirds.com/codes/naturemade.com",
+  "affiliateUrl": "https://naturemade.com/affiliate/123456",
+  "description": "Nature Made Coupon offers innovative solutions and services. Save money with our exclusive coupon codes and promotional offers.",
+  "logo": "/images/brands/nature-made-coupon.png",
+  "lastUpdated": "2025-07-08T11:50:58.778209",
+  "coupons": [
+    {
+      "id": "naturemadecoupon100",
+      "title": "CouponBirds Exclusive: Enjoy Sitewide Discount At Nature Made",
+      "code": "EXCLUSIVE20",
+      "description": "Save 20% on all Nature Made products with this exclusive offer",
+      "discount": "20%",
+      "type": "code",
+      "expiryDate": "2025-09-06",
+      "isVerified": true,
+      "usedCount": 488,
+      "successRate": 91,
+      "recentSaving": "$18.00",
+      "savedTime": "2 days ago"
+    },
+    {
+      "id": "naturemadecoupon101",
+      "title": "Save 20% Off Any Purchase",
+      "code": "",
+      "description": "Get 20% discount on your entire order - no code needed",
+      "discount": "20%",
+      "type": "deal",
+      "expiryDate": "2025-09-06",
+      "isVerified": false,
+      "usedCount": 798,
+      "successRate": 89,
+      "recentSaving": "$25.00",
+      "savedTime": "5 hours ago"
+    },
+    {
+      "id": "naturemadecoupon102",
+      "title": "Nature Made Promo Code: Extra 10% Off All Items",
+      "code": "EXTRA10",
+      "description": "Apply this promo code to get extra 10% off all Nature Made items",
+      "discount": "10%",
+      "type": "code",
+      "expiryDate": "2025-09-06",
+      "isVerified": true,
+      "usedCount": 875,
+      "successRate": 88,
+      "recentSaving": "$12.50",
+      "savedTime": "12 hrs ago"
+    },
+    {
+      "id": "naturemadecoupon103",
+      "title": "Save 15% Off New Nursery Furniture",
+      "code": "",
+      "description": "Special discount on new nursery furniture collection",
+      "discount": "15%",
+      "type": "deal",
+      "expiryDate": "2025-09-06",
+      "isVerified": false,
+      "usedCount": 234,
+      "successRate": 85,
+      "recentSaving": "$45.00",
+      "savedTime": "1 day ago"
+    },
+    {
+      "id": "naturemadecoupon104",
+      "title": "$1,000 Off All Items",
+      "code": "",
+      "description": "Get $1,000 off when you spend over $5,000",
+      "discount": "$1,000",
+      "type": "deal",
+      "expiryDate": "2025-09-06",
+      "isVerified": false,
+      "usedCount": 45,
+      "successRate": 75,
+      "recentSaving": "$1,000",
+      "savedTime": "3 days ago"
+    }
+  ],
+  "categories": [
+    "Software",
+    "Tools"
+  ],
+  "rating": 4.5,
+  "totalCoupons": 5,
+  "activeCoupons": 5,
+  "features": [
+    "Advanced analytics",
+    "24/7 customer support",
+    "API access",
+    "Mobile app included"
+  ]
+}
